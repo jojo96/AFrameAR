@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+	<script src="https://unpkg.com/aframe-animation-component@5.1.2/dist/aframe-animation-component.min.js"></script>
+    <!-- we import arjs version without NFT but with marker + location based support -->
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <body style="margin : 0px; overflow: hidden;">
+        <a-scene embedded arjs>
+        <a-marker preset="hiro">
+			<!--           
+		   <a-entity
+            position="0 -1 0"
+            scale="0.05 0.05 0.05"
+            gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
+            ></a-entity>
+			-->
+
+		<a-entity
+            position="0 -1 0"
+            scale="0.02 0.02 0.02"
+            gltf-model="./assets/spaceship/fs.gltf"
+			
+			animation__yo="property: rotation;  dur: 1000;
+                                  loop: true; to: 0 360 0"
+            ></a-entity>
+
+		<a-entity
+            position="-2 3 0"
+            scale=".25 .25 .25"
+            gltf-model="./assets/ship/model.gltf"
+			
+			
+            ></a-entity>
+
+
+<a-light id="spl"  type="directional" position="0 0 0" rotation="-90 0 0" color="#FF0000" target="#directionaltarget">
+  <a-entity id="directionaltarget" position="0 0 -1" ></a-entity>
+  
+</a-light>
+
+
+<a-box scale="0.3 0.3 0.3" color="#FFFF00"></a-box>
+			<a-cylinder color="#F55" radius="0.1"
+                animation="property: components.material.material.color; type: color; dir: alternate; dur: 1000;
+                           easing: easeInSine; loop: true; to: #5F5"
+                animation__scale="property: scale; dir: alternate; dur: 200;
+                           easing: easeInSine; loop: true; to: 1.2 1 1.2"
+                animation__yoyo="property: position; dir: alternate; dur: 1000;
+                                 easing: easeInSine; loop: true; to: 0 2 0"></a-cylinder>
+			
+			<a-box position="4 0 0" rotation="0 45 0" scale=".2 .2 .2" width="1" height="1" depth="1" color="#4CC3D9"
+			animation__yo="property: position; dir: alternate; dur: 1000;
+                                  loop: true; to: 4 2 .7"
+			></a-box>
+			<a-box position="4 0 .2" rotation="0 45 0" scale=".2 .2 .2" width="1" height="1" depth="1" color="#4CC3D9"
+			animation__yo="property: position; dir: alternate; dur: 1000;
+                                  loop: true; to: 4 1 .5"></a-box>
+			<a-box position="4 0 .4" rotation="0 45 0" scale=".2 .2 .2" width="1" height="1" depth="1" color="#4CC3D9"
+			animation__yo="property: position; dir: alternate; dur: 1000;
+                                  loop: true; to: 3 -1 .7"></a-box>
+			<a-box position="4 0 .6" rotation="0 45 0" scale=".2 .2 .2" width="1" height="1" depth="1" color="#4CC3D9"
+			animation__yo="property: position; dir: alternate; dur: 1000;
+                                  loop: true; to: 3 -2.3 .1"></a-box>
+			
+			<a-box position="3.8 0 .1" rotation="0 45 0" scale=".2 .2 .2" width="1" height="1" depth="1" color="#4CC3D9"
+			animation__yo="property: position; dir: alternate; dur: 1000;
+                                  loop: true; to: 5 -3 .4"></a-box>
+			<a-box position="3.8 0 .3" rotation="0 45 0" scale=".2 .2 .2" width="1" height="1" depth="1" color="#4CC3D9"
+			animation__yo="property: position; dir: alternate; dur: 1000;
+                                  loop: true; to: 4 1 .3"></a-box>
+			<a-box position="3.8 0 .5" rotation="0 45 0" scale=".2 .2 .2" width="1" height="1" depth="1" color="#4CC3D9"
+			animation__yo="property: position; dir: alternate; dur: 1000;
+                                  loop: true; to: 3 2 .2"></a-box>
+			
+			<a-box position="3.6 0 .2" rotation="0 45 0" scale=".2 .2 .2" width="1" height="1" depth="1" color="#4CC3D9"
+			animation__yo="property: position; dir: alternate; dur: 1000;
+                                  loop: true; to: 3 1 .7"></a-box>
+			<a-box position="3.6 0 .4" rotation="0 45 0" scale=".2 .2 .2" width="1" height="1" depth="1" color="#4CC3D9"
+			animation__yo="property: position; dir: alternate; dur: 1000;
+                                  loop: true; to: 3 2 .75"></a-box>
+			
+			<a-box position="3.4 0 .3" rotation="0 45 0" scale=".2 .2 .2" width="1" height="1" depth="1" color="#4CC3D9"
+			animation__yo="property: position; dir: alternate; dur: 1000;
+                                  loop: true; to: 2 1 .2"></a-box>
+			
+            <a-sphere radius="0.1"
+				animation__yo="property: position; dir: alternate; dur: 1000;
+                                  loop: true; to: 2 0 0"></a-cylinder>
+			<a-sphere radius="0.1"
+				animation__yo1="property: position; dir: alternate; dur: 1000;
+                                  loop: true; to: 4 0 0"></a-cylinder>							
+			<a-sphere radius="0.1"
+				animation__yo="property: position; dir: alternate; dur: 1000;
+                                  loop: true; to: 0 0 2"></a-cylinder>
+			<a-sphere radius="0.1"
+				animation__yo="property: position; dir: alternate; dur: 1000;
+                                  loop: true; to: 0 0 -2"></a-cylinder>
+					 
+        </a-marker>
+        <a-entity camera></a-entity>
+        </a-scene>
+    </body>
+	
+	<script>
+  document.body.onkeyup = function(e){
+    if(e.keyCode == 32){
+	    var col = ["#FF0000","#FFFFFF","#FF00FF","#FFFF00","#00FF00"]; 
+		var item = col[Math.floor(Math.random() * col.length)];
+		
+		console.log(item);
+		document.getElementById('spl').setAttribute('color', item);
+		}
+	}	
+
+	  </script>
+	
+	
+</html>
