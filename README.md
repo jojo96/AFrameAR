@@ -4,7 +4,7 @@ You can find the official library here: https://github.com/AR-js-org/AR.js
 
 # AR Magic
 
-Our project here: https://github.com/jojo96/AFrameAR/blob/main/index.html uses 2 GLTF models and a few presets. To test it just go to:
+Our project uses 2 GLTF models and a few presets. To test it just go to:
 https://jojo96.github.io/AFrameAR/
 
 Scan this marker:
