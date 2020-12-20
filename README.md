@@ -14,6 +14,8 @@ Scan this marker:
 
 You can see something like this:
 
+<img src="https://github.com/jojo96/AFrameAR/blob/main/AR%20GIF.gif"  alt="Normal">
+
 # Marker based AR
 
 Marker-based augmented reality experiences require a static image also referred to as a trigger photo that a person can scan using their mobile device via an augmented reality app.
