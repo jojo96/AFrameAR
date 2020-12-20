@@ -36,7 +36,8 @@ Our project here: https://github.com/jojo96/AFrameAR/blob/main/index.html uses 2
 https://jojo96.github.io/AFrameAR/
 
 Scan this marker:
-<img src="https://github.com/jojo96/AFrameAR/blob/main/hiro.png" width=69% height=600 alt="Normal">
+
+<img src="https://github.com/jojo96/AFrameAR/blob/main/hiro.png" width=69% height=400 alt="Normal">
 
 or visit https://www.google.com/search?q=hiro+marker&rlz=1C1CHBF_enIN918IN918&sxsrf=ALeKk03X9bf-FgR9KL7gyi-TbhNfXYJkVA:1608401358801&tbm=isch&source=iu&ictx=1&fir=_MwJ9lRXLQGNbM%252Ci98VmfUvVZY__M%252C_&vet=1&usg=AI4_-kQEgqZqQuubRTKmRmgZHRnlwjYBSw&sa=X&ved=2ahUKEwiq15b90drtAhWkxDgGHQPeBhQQ9QF6BAgIEAE&biw=1280&bih=521#imgrc=_BP5smwpTXwl9M
 
