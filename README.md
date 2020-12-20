@@ -9,7 +9,7 @@ https://jojo96.github.io/AFrameAR/
 
 Scan this marker:
 
-<img src="https://github.com/jojo96/AFrameAR/blob/main/hiro.png" width=59% height=400 alt="Normal">
+<img src="https://github.com/jojo96/AFrameAR/blob/main/hiro.png"  alt="Normal">
 
 
 You can see something like this:
